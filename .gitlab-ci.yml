@@ -24,7 +24,7 @@ deploy:
   services:
     - docker:dind
   variables:
-    DOCKER_IMAGE: tchofo/simple-maven-app  # Remplacez par votre nom d'image Docker
+    DOCKER_IMAGE: tchofo/simple-maven-app 
   before_script:
     - echo "Logging into Docker Hub..."
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
