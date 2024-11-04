@@ -1,4 +1,4 @@
-FROM maven:3.8.6-openjdk-11 AS builder
+FROM maven:3.8.7-openjdk-11 AS builder
 WORKDIR /app
 
 # Copier seulement le fichier pom.xml pour télécharger les dépendances Maven
